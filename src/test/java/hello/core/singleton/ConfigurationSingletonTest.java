@@ -25,6 +25,7 @@ public class ConfigurationSingletonTest {
         MemberRepository memberRepository1 = memberService.getMemberRepository();
         MemberRepository memberRepository2 = orderService.getMemberRepository();
 
+        // 다 같은거 확인할 수있음
         System.out.println("memberService -> memberRepository: " + memberRepository1);
         System.out.println("orderService -> memberRepository: " + memberRepository2);
         System.out.println("memberRepository: " + memberRepository);
